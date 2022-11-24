@@ -1,0 +1,13 @@
+*{
+    margin: 0 auto;
+    padding: 0px;
+}
+.t-bgr{
+    background: #FFFFFF ;
+    box-shadow: 0px 2px 8px rgb(0 0 0 / 15%) !important;
+    border-radius: 10px;
+    border: 1px solid #cccc;
+    /* background: url(../img/img2.bng)no-repeat !important; 
+    width: 100%;
+    background-size: 100% 100%; */
+}
