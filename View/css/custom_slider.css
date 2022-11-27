@@ -7,24 +7,25 @@ display: none !important;
 div#banner .slick-dots li.slick-active button:before{
     opacity: 1;
     color: black;
-    width: 30px;
-    height: 15px;
+    width: 47px;
+    height: 10px;
     background: aqua;
     content: ".";
+
    
 }
 div#banner .slick-dots li button::before {
     opacity: 1;
     color: black;
-    width: 30px;
-    height: 15px;
+    width: 47px;
+    height: 10px;
     background: red;
     content: ".";
     border-radius: 10px;
    
 }
 div#banner .slick-dots li{
-    margin: 0px 10px;
+    margin: 0px 20px;
     cursor: pointer !important;
 }
 button.slick-prev.slick-arrow{
@@ -36,4 +37,7 @@ button.slick-prev.slick-arrow{
 #banner .slick-next,
 #banner .slick-prev{
     display: none !important;
+}
+#banner .slick-dots{
+    bottom: -75px;
 }

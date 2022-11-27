@@ -44,11 +44,19 @@ jQuery(document).ready(function ($) {
   //     });
   // }
   $(".slide_home").slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1000,
+    // slidesToShow: 1,
+    // slidesToScroll: 1,
+    // // autoplay: true,
+    // autoplaySpeed: 1000,
+    // dots: true,
+
     dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: 'linear'
+
+
   });
 
   $('.comic1').slick({
@@ -59,13 +67,69 @@ jQuery(document).ready(function ($) {
     dots: false,
     infinite: false,
     fade: false,
+    responsive: [
+      {
+        breakpoint: 1026,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false,
+          arrow: false,
+        },
+      },
+      {
+        breakpoint: 869,
+        settings: {
+          slidesToShow: 4,
+          arrow: false,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          arrow: false,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
   $('.comic2').slick({
     slidesToShow: 6,
     slidesToScroll: 6,
-    autoplay: true,
+    // autoplay: true,
     autoplaySpeed: 2000,
     dots: false,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          infinite: false,
+          dots: false,
+          arrow: false,
+        },
+      },
+      {
+        breakpoint: 869,
+        settings: {
+          slidesToShow: 4,
+          arrow: false,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          arrow: false,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
           
 });
